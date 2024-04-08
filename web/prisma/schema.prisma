@@ -17,3 +17,9 @@ model Session {
   accessToken String
   userId      BigInt?
 }
+
+model SavedCart {
+  id            String    @id
+  checkoutToken String
+  productIds    Json
+}
